@@ -7,7 +7,12 @@
      file:
        path: /home/lakki/myfolder
        state: directory
-  - name: i want to copy test file
-    copy: 
+  -  name: i want to copy test file
+     copy: 
       src: mytextfile
       dest: /home/lakki/myfolder/mytextfile  
+
+  -  name: install apache2
+     apt: 
+       name: apache2
+       state: present    
