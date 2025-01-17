@@ -10,4 +10,4 @@
   - name: i want to copy test file
     copy: 
       src: mytextfile
-      destination: /home/lakki/myfolder/mytextfile  
+      dest: /home/lakki/myfolder/mytextfile  
