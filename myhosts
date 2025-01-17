@@ -13,3 +13,7 @@
 172.31.1.155
 172.31.1.156
 172.31.1.153                                 
+
+[myappservers:vars]
+key=value
+mywebpackage=apache22222
