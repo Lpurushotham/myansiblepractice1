@@ -16,4 +16,4 @@
 
 [myappservers:vars]
 key=value
-mywebpackage=apache2
+mywebpackage=apache22222
