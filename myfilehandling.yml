@@ -21,3 +21,9 @@
      template:
           src: myindex.j2
           dest: /var/www/html/index.html     
+
+  -  name: i want to download internet(remote) file
+     get_url:
+         get_url: https://github.com/Lpurushotham/myansiblepractice1/blob/main/installjava.yml
+         dest: /home/lakki/myfolder/installjava.yml
+         force_basic_auth: yes
