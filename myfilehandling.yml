@@ -21,7 +21,7 @@
      template:
           src: myindex.j2
           dest: /var/www/html/index.html 
-     notify: restart web server        
+     notify: restartwebserver        
 
   -  name: i want to download internet(remote) file
      get_url:
@@ -30,7 +30,7 @@
          force_basic_auth: yes
 
   handlers:
-  -  name: restart web server
+  -  name: restartwebserver
      service:
         name: apache2
         state: restarted
