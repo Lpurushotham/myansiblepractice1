@@ -20,10 +20,17 @@
   -  name: i want to copy index file into nodes
      template:
           src: myindex.j2
-          dest: /var/www/html/index.html     
+          dest: /var/www/html/index.html 
+     notify: restart web server        
 
   -  name: i want to download internet(remote) file
      get_url:
-         get_url: https://github.com/Lpurushotham/myansiblepractice/blob/main/mywebserver.yml
+         url: https://github.com/Lpurushotham/myansiblepractice/blob/main/mywebserver.yml
          dest: /home/lakki/myfolder/installjava.yml
          force_basic_auth: yes
+
+  handlers:
+  -  name: restart web server
+     service:
+        name: apache2
+        state: restarted
