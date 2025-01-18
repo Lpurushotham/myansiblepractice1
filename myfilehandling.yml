@@ -24,6 +24,6 @@
 
   -  name: i want to download internet(remote) file
      get_url:
-         get_url: https://github.com/Lpurushotham/myansiblepractice1/blob/main/installjava.yml
+         get_url: https://github.com/Lpurushotham/myansiblepractice/blob/main/mywebserver.yml
          dest: /home/lakki/myfolder/installjava.yml
          force_basic_auth: yes
