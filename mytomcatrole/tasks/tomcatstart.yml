@@ -1,0 +1,8 @@
+---
+- name: tomcatstart.yml
+  systemd:
+    state: started
+    daemon_reload: yes
+    enabled: yes
+    name: tomcat 
+    
