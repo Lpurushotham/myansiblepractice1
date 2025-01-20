@@ -17,8 +17,8 @@ Environment="CATALINA_HOME=/opt/tomcat/apache-tomcat-10.1.34"
 Environment="CATALINA_PID=/opt/tomcat/apache-tomcat-10.1.34/temp/tomcat.pid"
 Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
 
-ExecStart=/opt/tomcat/apache-tomcat-10.1.34/startup.sh
-ExecStop=/opt/tomcat/apache-tomcat-10.1.34/shutdown.sh
+ExecStart=/opt/tomcat/apache-tomcat-10.1.34/bin/startup.sh
+ExecStop=/opt/tomcat/apache-tomcat-10.1.34/bin/shutdown.sh
 
 [Install]
 WantedBy=multi-user.target
